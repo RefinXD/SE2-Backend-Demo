@@ -32,9 +32,7 @@ app.post('/user', bodyParser.json() , async (req, res) => {
     res.json(user)
   })
 
-
-
-const server = app.listen(port, () =>
+app.listen(port, () =>
   console.log(`
 🚀 Server ready at: http://localhost:3000
 ⭐️ See sample requests: http://pris.ly/e/ts/rest-express#3-using-the-rest-api`),
